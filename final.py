@@ -71,11 +71,11 @@ frame.place(relx=0.5, rely=0.1, relwidth=0.75, relheight=0.1, anchor='n')
 #intro = tk.Label(frame, text="Enter a city: ")
 #intro.place(relwidth=0.65, relheight=1)
 
-city_entry = tk.Entry(frame, borderwidth=10, relief=FLAT)
+city_entry = tk.Entry(frame, borderwidth=10, relief='flat')
 city_entry.focus()
 city_entry.place(relwidth=0.65, relheight=1)
 
-button = tk.Button(frame, bd=0, text="Get Weather", bg =highlight_color, font=(my_font), command=lambda: get_weather(city_entry.get()))
+button = tk.Button(frame, relief='flat',bd=0, text="Get Weather", bg =highlight_color, font=(my_font), command=lambda: get_weather(city_entry.get()))
 button.place(relx=0.7, relheight=1, relwidth=0.3)
 
 lower_frame = tk.Frame(root, bg=highlight_color, bd=5)
